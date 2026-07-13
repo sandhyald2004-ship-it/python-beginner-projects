@@ -1,33 +1,31 @@
-def calculate(number1: float, number2: float, operator: str) -> float:
-    """Perform a basic arithmetic operation."""
+# Python Beginner Projects
 
-    if operator == "+":
-        return number1 + number2
-    if operator == "-":
-        return number1 - number2
-    if operator == "*":
-        return number1 * number2
-    if operator == "/":
-        if number2 == 0:
-            raise ValueError("Division by zero is not allowed.")
-        return number1 / number2
+This repository contains beginner-friendly Python projects created while learning Python and Git.
 
-    raise ValueError("Unsupported operator.")
+## Projects
 
+### 1. Basic Calculator
+- Performs addition, subtraction, multiplication, and division.
 
-def main() -> None:
-    try:
-        first_number = float(input("Enter the first number: "))
-        operator = input("Enter an operator (+, -, *, /): ").strip()
-        second_number = float(input("Enter the second number: "))
+Run:
+```bash
+python calculator.py
+```
 
-        result = calculate(first_number, second_number, operator)
-        print(f"Result: {result}")
+### 2. Password Generator
+- Generates secure random passwords.
 
-    except ValueError as error:
-        print(f"Error: {error}")
+Run:
+```bash
+python password_generator.py
+```
 
+## Technologies Used
 
-if __name__ == "__main__":
-    main()# python-beginner-projects
-A collection of beginner-friendly Python programs and mini projects.
+- Python 3
+- Git
+- GitHub
+
+## Author
+
+Sandhya L D
